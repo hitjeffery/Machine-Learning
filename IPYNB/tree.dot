@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Sugar <= 0.126\nentropy = 0.998\nsamples = 17\nvalue = [8, 9]\nclass = yes", fillcolor="#e9f4fc"] ;
+1 [label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes", fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Density <= 0.382\nentropy = 0.918\nsamples = 12\nvalue = [8, 4]\nclass = no", fillcolor="#f2c09c"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="Sugar <= 0.204\nentropy = 0.722\nsamples = 10\nvalue = [8, 2]\nclass = no", fillcolor="#eca06a"] ;
+2 -> 4 ;
+5 [label="Density <= 0.56\nentropy = 0.918\nsamples = 3\nvalue = [1, 2]\nclass = yes", fillcolor="#9ccef2"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 7\nvalue = [7, 0]\nclass = no", fillcolor="#e58139"] ;
+4 -> 8 ;
+}
